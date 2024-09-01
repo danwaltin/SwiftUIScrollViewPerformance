@@ -11,3 +11,13 @@ struct TrackDisplayModel : Identifiable {
 	let displayPosition: Double
 	let displayWidth: Double
 }
+
+extension Array where Element == TrackDisplayModel {
+	func zoomedTo(zoom: Double) -> [TrackDisplayModel] {
+		self.map{ .init(
+			id: $0.id,
+			title: $0.title,
+			displayPosition: $0.displayPosition * zoom,
+			displayWidth: $0.displayWidth * zoom)}
+	}
+}

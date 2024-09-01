@@ -171,3 +171,15 @@ extension TimelineSectionTick {
 			position: position * zoom)
 	}
 }
+
+extension Double {
+	var timelineResolution: TimelineResolution {
+		switch self {
+		case 0..<0.8:   return .tenMinutes
+		case 0.8..<1.9: return .fiveMinutes
+		case 1.9..<2.9: return .oneMinute
+		case 2.9..<3.9: return .thirtySeconds
+		default:        return .tenSeconds
+		}
+	}
+}
