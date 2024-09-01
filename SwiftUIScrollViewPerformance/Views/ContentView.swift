@@ -19,7 +19,10 @@ struct ContentView: View {
 			.listStyle(.sidebar)
 
 		} detail: {
-			MixView(mix: mix)
+			VStack(spacing: 0) {
+				EditMixView(mix: mix)
+				EditMixBottomToolbar(numberOfTracks: mix.tracks.count)
+			}
 		}
     }
 }

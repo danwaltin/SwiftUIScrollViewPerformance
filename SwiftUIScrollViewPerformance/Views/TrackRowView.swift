@@ -33,7 +33,7 @@ extension ShapeStyle where Self == TrackBackgroundShapeStyle {
 }
 
 struct TrackRowView: View {
-	let track: Track
+	let track: TrackDisplayModel
 	let rowWidth: Double
 
 	var body: some View {

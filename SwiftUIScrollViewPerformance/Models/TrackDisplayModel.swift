@@ -1,14 +1,11 @@
 //
-//  Track.swift
+//  TrackDisplayModel.swift
 //  SwiftUIScrollViewPerformance
 //
 //  Created by Dan Waltin on 2024-08-25.
 //
 
-
-import SwiftUI
-
-struct Track : Identifiable {
+struct TrackDisplayModel : Identifiable {
 	let id: Int
 	let title: String
 	let displayPosition: Double
