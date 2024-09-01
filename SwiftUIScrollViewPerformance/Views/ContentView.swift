@@ -21,7 +21,7 @@ struct ContentView: View {
 		} detail: {
 			VStack(spacing: 0) {
 				EditMixView(mix: mix)
-				EditMixBottomToolbar(numberOfTracks: mix.tracks.count)
+				EditMixBottomToolbar(numberOfTracks: mix.tracks.count, duration: mix.duration)
 			}
 		}
     }

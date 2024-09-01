@@ -42,5 +42,6 @@ struct EditMixView : View {
 				}
 			}
 		}
+		.scrollIndicators(.visible)
 	}
 }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+fileprivate let enableMacOS15OnScrollVisibilityChanged = true
+
 struct TimelineSectionView: View {
 	let section: TimelineSection
 	
@@ -16,9 +18,9 @@ struct TimelineSectionView: View {
 		if #available(macOS 15.0, *) {
 			content()
 				.frame(width: section.displayWidth)
-//				.onScrollVisibilityChange(threshold: 0.01) {
-//					isVisible = $0
-//				}
+				.onScrollVisibilityChange(threshold: 0.01) {
+					isVisible = enableMacOS15OnScrollVisibilityChanged ? $0 : true
+				}
 		} else {
 			content()
 				.frame(width: section.displayWidth)
