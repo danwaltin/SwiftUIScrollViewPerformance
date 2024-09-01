@@ -147,6 +147,31 @@ enum TimelineResolution {
 	}
 }
 
+extension Array where Element == TimelineSection {
+	func zoomedTo(zoom: Double) -> [TimelineSection] {
+		self.map {$0.zoomedTo(zoom: zoom)}
+	}
+}
+
+extension TimelineSection {
+	func zoomedTo(zoom: Double) -> TimelineSection {
+		.init(
+			id: id,
+			ticks: ticks.map {$0.zoomedTo(zoom: zoom)},
+			displayStartTime: displayStartTime,
+			displayEndTime: displayEndTime,
+			displayWidth: displayWidth * zoom)
+	}
+}
+
+extension TimelineSectionTick {
+	func zoomedTo(zoom: Double) -> TimelineSectionTick {
+		.init(
+			type: type,
+			position: position * zoom)
+	}
+}
+
 extension Int {
 	var min: TimeInterval {
 		get {

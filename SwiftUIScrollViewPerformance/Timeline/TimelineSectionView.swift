@@ -17,15 +17,15 @@ struct TimelineSectionView: View {
 	
 	@ViewBuilder
 	private func content() -> some View {
-			SectionTicks(ticks: section.ticks)
-				.stroke(.green, lineWidth: 1)
-//				.overlay(alignment: .topLeading) {
-//					SectionTime(time: section.displayStartTime)
-//						.padding(.leading, -1)
-//				}
-//				.overlay(alignment: .topTrailing) {
-//					SectionTime(time: section.displayEndTime)
-//						.padding(.trailing, -1)
-//				}
+		SectionTicks(ticks: section.ticks)
+			.stroke(.green, lineWidth: 1)
+			.overlay(alignment: .topLeading) {
+				SectionTime(time: section.displayStartTime)
+					.padding(.leading, -1)
+			}
+			.overlay(alignment: .topTrailing) {
+				SectionTime(time: section.displayEndTime)
+					.padding(.trailing, -1)
+			}
 	}
 }

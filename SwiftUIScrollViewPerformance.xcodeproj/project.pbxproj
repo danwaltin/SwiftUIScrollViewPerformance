@@ -21,6 +21,8 @@
 		3752283E2C84B20900E6289E /* TimelineSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752283D2C84B20900E6289E /* TimelineSectionView.swift */; };
 		375228402C84B21200E6289E /* SectionTicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752283F2C84B21200E6289E /* SectionTicks.swift */; };
 		375228422C84B26700E6289E /* TimelineSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228412C84B26700E6289E /* TimelineSection.swift */; };
+		375228442C84B9C800E6289E /* TimeInterval+DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228432C84B9C600E6289E /* TimeInterval+DurationFormatter.swift */; };
+		375228462C84BA0300E6289E /* SectionTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228452C84BA0300E6289E /* SectionTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		3752283D2C84B20900E6289E /* TimelineSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSectionView.swift; sourceTree = "<group>"; };
 		3752283F2C84B21200E6289E /* SectionTicks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTicks.swift; sourceTree = "<group>"; };
 		375228412C84B26700E6289E /* TimelineSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSection.swift; sourceTree = "<group>"; };
+		375228432C84B9C600E6289E /* TimeInterval+DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+DurationFormatter.swift"; sourceTree = "<group>"; };
+		375228452C84BA0300E6289E /* SectionTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		3752283C2C84B1C000E6289E /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				375228432C84B9C600E6289E /* TimeInterval+DurationFormatter.swift */,
 				3752282D2C84B1BB00E6289E /* TimelineSectionsView.swift */,
 				3752283D2C84B20900E6289E /* TimelineSectionView.swift */,
 				3752283F2C84B21200E6289E /* SectionTicks.swift */,
 				375228412C84B26700E6289E /* TimelineSection.swift */,
+				375228452C84BA0300E6289E /* SectionTime.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 				375228422C84B26700E6289E /* TimelineSection.swift in Sources */,
 				375228382C84B1BB00E6289E /* SwiftUIScrollViewPerformanceApp.swift in Sources */,
 				375228392C84B1BB00E6289E /* TimelineSectionsView.swift in Sources */,
+				375228462C84BA0300E6289E /* SectionTime.swift in Sources */,
+				375228442C84B9C800E6289E /* TimeInterval+DurationFormatter.swift in Sources */,
 				3752283A2C84B1BB00E6289E /* Track.swift in Sources */,
 				3752283B2C84B1BB00E6289E /* TrackRowView.swift in Sources */,
 			);
