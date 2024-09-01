@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -170,6 +170,7 @@
 				};
 			};
 			buildConfigurationList = 3709904E2C7B274800660B55 /* Build configuration list for PBXProject "SwiftUIScrollViewPerformance" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,7 +179,6 @@
 			);
 			mainGroup = 3709904A2C7B274800660B55;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 370990542C7B274800660B55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
