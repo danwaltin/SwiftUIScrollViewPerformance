@@ -7,18 +7,22 @@
 
 import SwiftUI
 
-
-
-
 struct ContentView: View {
 	let mix: Mix
+	
     var body: some View {
-		MixView(mix: mix)
+		NavigationSplitView {
+			List {
+				Text("Lorem")
+				Text("Ipsum")
+			}
+			.listStyle(.sidebar)
+
+		} detail: {
+			MixView(mix: mix)
+		}
     }
 }
-
-
-
 
 #Preview {
 	ContentView(mix: mix)
