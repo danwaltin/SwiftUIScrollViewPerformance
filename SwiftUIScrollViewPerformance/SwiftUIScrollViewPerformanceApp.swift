@@ -13,8 +13,7 @@ struct SwiftUIScrollViewPerformanceApp: App {
 	
     var body: some Scene {
         WindowGroup {
-			ContentView()
-				.environment(settings)
+			ContentView(settings: settings)
         }
     }
 }

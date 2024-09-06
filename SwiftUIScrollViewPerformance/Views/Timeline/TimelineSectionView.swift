@@ -8,36 +8,9 @@
 import SwiftUI
 
 struct TimelineSectionView: View {
-	@Environment(Settings.self) var settings
-	
 	let section: TimelineSection
-	
-	@State private var isVisible = true
 
 	var body: some View {
-		if #available(macOS 15.0, *) {
-			content()
-				.frame(width: section.displayWidth)
-				.onScrollVisibilityChange(threshold: 0.01) {
-					isVisible = settings.enableMacOS15OnScrollVisibilityChanged ? $0 : true
-				}
-		} else {
-			content()
-				.frame(width: section.displayWidth)
-		}
-	}
-	
-	@ViewBuilder
-	private func content() -> some View {
-		if isVisible {
-			visibleContent()
-		} else {
-			invisibleContent()
-		}
-	}
-	
-	@ViewBuilder
-	private func visibleContent() -> some View {
 		SectionTicks(ticks: section.ticks)
 			.stroke(.green, lineWidth: 1)
 			.overlay(alignment: .topLeading) {
@@ -48,10 +21,6 @@ struct TimelineSectionView: View {
 				SectionTime(time: section.displayEndTime)
 					.padding(.trailing, -1)
 			}
-	}
-	
-	@ViewBuilder
-	private func invisibleContent() -> some View {
-		Color.clear.allowsHitTesting(false)
+			.frame(width: section.displayWidth)
 	}
 }

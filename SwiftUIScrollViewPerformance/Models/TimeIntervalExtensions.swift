@@ -20,17 +20,3 @@ extension Int {
 		}
 	}
 }
-
-extension Double {
-	var min: TimeInterval {
-		get {
-			return TimeInterval(60 * self)
-		}
-	}
-
-	var sec: TimeInterval {
-		get {
-			return TimeInterval(self)
-		}
-	}
-}

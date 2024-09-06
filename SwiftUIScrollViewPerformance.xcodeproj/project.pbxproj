@@ -10,9 +10,7 @@
 		375228312C84B1BB00E6289E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375228232C84B1BB00E6289E /* Preview Assets.xcassets */; };
 		375228322C84B1BB00E6289E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375228252C84B1BB00E6289E /* Assets.xcassets */; };
 		375228332C84B1BB00E6289E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228262C84B1BB00E6289E /* ContentView.swift */; };
-		375228342C84B1BB00E6289E /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228272C84B1BB00E6289E /* ToolbarView.swift */; };
 		375228352C84B1BB00E6289E /* EditMixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228282C84B1BB00E6289E /* EditMixView.swift */; };
-		375228362C84B1BB00E6289E /* Mix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228292C84B1BB00E6289E /* Mix.swift */; };
 		375228382C84B1BB00E6289E /* SwiftUIScrollViewPerformanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752282C2C84B1BB00E6289E /* SwiftUIScrollViewPerformanceApp.swift */; };
 		375228392C84B1BB00E6289E /* TimelineSectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752282D2C84B1BB00E6289E /* TimelineSectionsView.swift */; };
 		3752283A2C84B1BB00E6289E /* TrackDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752282E2C84B1BB00E6289E /* TrackDisplayModel.swift */; };
@@ -22,7 +20,6 @@
 		375228422C84B26700E6289E /* TimelineSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228412C84B26700E6289E /* TimelineSection.swift */; };
 		375228442C84B9C800E6289E /* TimeInterval+AsDurationString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228432C84B9C600E6289E /* TimeInterval+AsDurationString.swift */; };
 		375228462C84BA0300E6289E /* SectionTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228452C84BA0300E6289E /* SectionTime.swift */; };
-		3752284A2C84BB6A00E6289E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375228492C84BB6A00E6289E /* Track.swift */; };
 		3752284C2C84BBB600E6289E /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752284B2C84BBAE00E6289E /* TimeIntervalExtensions.swift */; };
 		37C9812E2C8B3650003CC823 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9812D2C8B3650003CC823 /* Settings.swift */; };
 /* End PBXBuildFile section */
@@ -32,9 +29,7 @@
 		375228232C84B1BB00E6289E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		375228252C84B1BB00E6289E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375228262C84B1BB00E6289E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		375228272C84B1BB00E6289E /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		375228282C84B1BB00E6289E /* EditMixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMixView.swift; sourceTree = "<group>"; };
-		375228292C84B1BB00E6289E /* Mix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mix.swift; sourceTree = "<group>"; };
 		3752282B2C84B1BB00E6289E /* SwiftUIScrollViewPerformance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIScrollViewPerformance.entitlements; sourceTree = "<group>"; };
 		3752282C2C84B1BB00E6289E /* SwiftUIScrollViewPerformanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIScrollViewPerformanceApp.swift; sourceTree = "<group>"; };
 		3752282D2C84B1BB00E6289E /* TimelineSectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSectionsView.swift; sourceTree = "<group>"; };
@@ -45,7 +40,6 @@
 		375228412C84B26700E6289E /* TimelineSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSection.swift; sourceTree = "<group>"; };
 		375228432C84B9C600E6289E /* TimeInterval+AsDurationString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+AsDurationString.swift"; sourceTree = "<group>"; };
 		375228452C84BA0300E6289E /* SectionTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTime.swift; sourceTree = "<group>"; };
-		375228492C84BB6A00E6289E /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		3752284B2C84BBAE00E6289E /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		37C9812D2C8B3650003CC823 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +109,6 @@
 			children = (
 				3752284B2C84BBAE00E6289E /* TimeIntervalExtensions.swift */,
 				375228412C84B26700E6289E /* TimelineSection.swift */,
-				375228492C84BB6A00E6289E /* Track.swift */,
-				375228292C84B1BB00E6289E /* Mix.swift */,
 				3752282E2C84B1BB00E6289E /* TrackDisplayModel.swift */,
 				37C9812D2C8B3650003CC823 /* Settings.swift */,
 			);
@@ -127,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				375228262C84B1BB00E6289E /* ContentView.swift */,
-				375228272C84B1BB00E6289E /* ToolbarView.swift */,
 				375228282C84B1BB00E6289E /* EditMixView.swift */,
 				3752282F2C84B1BB00E6289E /* TrackRowView.swift */,
 				3752283C2C84B1C000E6289E /* Timeline */,
@@ -210,17 +201,14 @@
 			files = (
 				375228332C84B1BB00E6289E /* ContentView.swift in Sources */,
 				375228402C84B21200E6289E /* SectionTicks.swift in Sources */,
-				375228342C84B1BB00E6289E /* ToolbarView.swift in Sources */,
 				375228352C84B1BB00E6289E /* EditMixView.swift in Sources */,
 				3752283E2C84B20900E6289E /* TimelineSectionView.swift in Sources */,
-				375228362C84B1BB00E6289E /* Mix.swift in Sources */,
 				375228422C84B26700E6289E /* TimelineSection.swift in Sources */,
 				375228382C84B1BB00E6289E /* SwiftUIScrollViewPerformanceApp.swift in Sources */,
 				375228392C84B1BB00E6289E /* TimelineSectionsView.swift in Sources */,
 				375228462C84BA0300E6289E /* SectionTime.swift in Sources */,
 				37C9812E2C8B3650003CC823 /* Settings.swift in Sources */,
 				3752284C2C84BBB600E6289E /* TimeIntervalExtensions.swift in Sources */,
-				3752284A2C84BB6A00E6289E /* Track.swift in Sources */,
 				375228442C84B9C800E6289E /* TimeInterval+AsDurationString.swift in Sources */,
 				3752283A2C84B1BB00E6289E /* TrackDisplayModel.swift in Sources */,
 				3752283B2C84B1BB00E6289E /* TrackRowView.swift in Sources */,

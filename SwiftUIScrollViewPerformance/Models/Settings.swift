@@ -9,5 +9,4 @@ import Foundation
 
 @Observable class Settings {
 	var useNavigationSplitView = true
-	var enableMacOS15OnScrollVisibilityChanged = false
 }

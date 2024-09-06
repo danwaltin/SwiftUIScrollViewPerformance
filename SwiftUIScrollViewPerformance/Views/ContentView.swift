@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-	@Environment(Settings.self) var settings
+	@Bindable var settings: Settings
 	
     var body: some View {
 		content()
 			.toolbar {
-				ToolbarView(settings: settings)
-					.padding()
+				Toggle(isOn: $settings.useNavigationSplitView) {
+					Text("Use NavigationSplitView")
+				}
+				.toggleStyle(.checkbox)
+				.padding()
 			}
     }
 	
@@ -37,8 +40,3 @@ struct ContentView: View {
 
 	}
 }
-
-#Preview {
-	ContentView()
-}
-
