@@ -8,27 +8,23 @@
 
 import SwiftUI
 
-struct EditMixView : View {
-	private let mix: Mix
-	private let timelineSections: [TimelineSection]
-	private let tracks: [TrackDisplayModel]
-	private let width: Double
-	private let zoom: Double = 4
-	
-	init(mix: Mix) {
-		self.mix = mix
-		tracks = mix
-			.displayTracks
-			.zoomedTo(zoom: zoom)
-		
-		let resolution = zoom.timelineResolution
+fileprivate let trackIds = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+fileprivate let trackDuration: TimeInterval = 3.min + 30.sec
+fileprivate let totalDuration = trackDuration * Double(trackIds.count)
+fileprivate let zoom: Double = 4
+fileprivate let resolution = zoom.timelineResolution
 
-		timelineSections = mix.duration
-			.timelineSections(resolution: resolution)
-			.zoomedTo(zoom: zoom)
-	
-		width = mix.duration * zoom
-	}
+struct EditMixView : View {
+	private let timelineSections = totalDuration
+		.timelineSections(resolution: resolution)
+		   .zoomedTo(zoom: zoom)
+	private let tracks: [TrackDisplayModel] = trackIds.map {TrackDisplayModel(
+		id: $0,
+		title: "Track \($0)",
+		displayPosition: Double($0 - 1) * trackDuration,
+		displayWidth: trackDuration)}
+		.zoomedTo(zoom: zoom)
+	private let width = totalDuration * zoom
 	
 	var body: some View {
 		ScrollView([.vertical, .horizontal]) {

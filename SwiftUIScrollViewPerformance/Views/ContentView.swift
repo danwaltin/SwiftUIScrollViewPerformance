@@ -8,26 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
-	let mix: Mix
+	@Environment(Settings.self) var settings
 	
     var body: some View {
-		NavigationSplitView {
-			List {
-				Text("Lorem")
-				Text("Ipsum")
+		content()
+			.toolbar {
+				ToolbarView(settings: settings)
+					.padding()
 			}
-			.listStyle(.sidebar)
-
-		} detail: {
-			VStack(spacing: 0) {
-				EditMixView(mix: mix)
-				EditMixBottomToolbar(numberOfTracks: mix.tracks.count, duration: mix.duration)
-			}
-		}
     }
+	
+	@ViewBuilder
+	private func content() -> some View {
+		if settings.useNavigationSplitView {
+			NavigationSplitView {
+				List {
+					Text("Lorem")
+					Text("Ipsum")
+				}
+				.listStyle(.sidebar)
+
+			} detail: {
+				EditMixView()
+			}
+		} else {
+			EditMixView()
+		}
+
+	}
 }
 
 #Preview {
-	ContentView(mix: mix)
+	ContentView()
 }
 
