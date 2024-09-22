@@ -24,6 +24,9 @@ struct TrackRowView: View {
 					.fill(Color.blue.opacity(0.2))
 					.clipShape(RoundedRectangle(cornerRadius: 6))
 					.frame(width: track.displayWidth, height: 120)
+					.overlay {
+						Text(track.title)
+					}
 			}
 		}
 	}
